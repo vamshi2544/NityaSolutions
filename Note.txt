@@ -1,0 +1,6 @@
+Please create project with meaningful name, and create package with correct name.   
+never create class in default package. 
+
+package naming.   com.yourcompanydomain.yourpackage. 
+
+such as,  com.nitya.FlyingTech.Domain.
