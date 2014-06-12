@@ -27,6 +27,10 @@ public class FirstClassProg {
         Iterator<String> itr = arrl.iterator();
         while(itr.hasNext()){
             System.out.println(itr.next());
+            
+            System.out.println("what if i change the same class and save. can i modify , commit and push");
+            System.out.println("i vlv try");
+            
         }
     }
     /**
