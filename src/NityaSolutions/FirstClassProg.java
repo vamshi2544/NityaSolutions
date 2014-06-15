@@ -3,9 +3,9 @@ package NityaSolutions;
 import java.util.ArrayList;
 import java.util.Iterator;
 /**
- *  Explain this class what this for
+ * This class is to show a list of strings in an array
  *  
- * @author put your name here
+ * @author vamshi
  */
 public class FirstClassProg {
 	/**
@@ -30,8 +30,6 @@ public class FirstClassProg {
                        
             
         }
-        System.out.println("what if i change the same class and save. can i modify , commit and push");
-        System.out.println("i vlv try");
     }
     /**
      * put explanation of this method  here
