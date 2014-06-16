@@ -5,7 +5,7 @@ package com.nitya.FlyingTech.Demo;
  * @author vamshikrishna
  *
  */
-public class Employee_repo {
+public class EmployeeRepo {
 /**
  * @see firstname
  * @see Emp_id
@@ -20,7 +20,7 @@ public class Employee_repo {
  * defines employee_repo method with out parameters and default values
  * @see employee_repo method
  */
-	public Employee_repo()
+	public EmployeeRepo()
 	{
 		setFirstname("vamshi");
 		setEmp_id(1001);
@@ -32,7 +32,7 @@ public class Employee_repo {
 	 * defines employee_repo method with single parameter
 	 * @param firstname1 stores string value in it
 	 */
-	public Employee_repo(String firstname1)
+	public EmployeeRepo(String firstname1)
 	{
 	 setFirstname(firstname1);
 	}
@@ -43,7 +43,7 @@ public class Employee_repo {
 	 * @param firstname1 
 	 * @param Emp_id1
 	 */
-	public Employee_repo(String firstname1,int Emp_id1)
+	public EmployeeRepo(String firstname1,int Emp_id1)
 	{
 		setFirstname(firstname1);
 		setEmp_id(Emp_id1);
@@ -55,7 +55,7 @@ public class Employee_repo {
 	 * @param Emp_id1
 	 * @param salary1
 	 */
-	public Employee_repo(String firstname1,int Emp_id1,float salary1)
+	public EmployeeRepo(String firstname1,int Emp_id1,float salary1)
 	{
 		setFirstname(firstname1);
 		setEmp_id(Emp_id1);

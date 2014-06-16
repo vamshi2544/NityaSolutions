@@ -7,7 +7,7 @@ package com.nitya.FlyingTech.Demo;
  * @author vamshi krishna
  *
  */
-public class Employee_main {
+public class Client {
 /** 
  * this is main method from where execution starts
  * @param args- can give any number of arguements here
@@ -21,12 +21,12 @@ public class Employee_main {
 		 * @see emp3 object
 		 * @see emp4 object
 		 */
-Employee_repo emp1=new Employee_repo();
-Employee_repo emp2=new Employee_repo("vivek");
+EmployeeRepo emp1=new EmployeeRepo();
+EmployeeRepo emp2=new EmployeeRepo("vivek");
 emp2.setEmp_id(1002);
-Employee_repo emp3=new Employee_repo("pradeep",1003);
+EmployeeRepo emp3=new EmployeeRepo("pradeep",1003);
 emp3.setSalary(6000);
-Employee_repo emp4=new Employee_repo("ramu",1004,8000);
+EmployeeRepo emp4=new EmployeeRepo("ramu",1004,8000);
 
 /**
  * prints firstname , emp_id, salary of emp1 object
