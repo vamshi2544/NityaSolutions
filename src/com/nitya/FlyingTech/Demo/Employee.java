@@ -18,8 +18,7 @@ public class Employee {
 	 */
 	private float salary;
 	
-	public Employee(){
-		
+	public Employee(){	
 	}
 	public  Employee(String firstName1,int empId1,float salary1){
 		firstName=firstName1;

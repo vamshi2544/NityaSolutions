@@ -3,24 +3,27 @@ package com.nitya.FlyingTech.Demo;
 import java.util.ArrayList;
 
 /**
- * 
- * @author yari_uygur
+ * This class acts as database for employee details.
+ * @author vamshikrishna
  * 
  */
 public class Repository {
 	/**
-	 * 
+	 * Creating a arraylist of type Employee by name employeeList to store employee details.
 	 */
 	private static ArrayList<Employee> employeeList = new ArrayList<Employee>();
 
 	/**
-	 * 
-	 * @param empId
+	 * getEmployee is a method to get an employee id 
+	 * @param empId to receive employee id 
 	 * @return
 	 */
 	public static Employee getEmployee(int empId) {
-	//using for loop, loop throw the employeeList if employee id is equal to empId, then return that employee
-
+	//using for loop, loop throw the employeeList if employee id is
+//		equal to empId, then return that employee
+		for (int i=0;i<=employeeList;i++) {
+			empId= 
+		}
 		return emp1;
 	}
 
