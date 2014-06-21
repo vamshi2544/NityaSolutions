@@ -31,6 +31,11 @@ public class Client {
 		EmployeeRepo emp3 = new EmployeeRepo("pradeep", 1003);
 		emp3.setSalary(6000);
 		EmployeeRepo emp4 = new EmployeeRepo("ramu", 1004, 8000);
+		Employee emp = Repository.getEmployee(1000);
+		
+		
+		System.out.println(emp.toString());
+	
 
 		/**
 		 * prints firstname , emp_id, salary of emp1 object

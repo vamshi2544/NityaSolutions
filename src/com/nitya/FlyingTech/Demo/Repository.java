@@ -19,12 +19,16 @@ public class Repository {
 	 * @return
 	 */
 	public static Employee getEmployee(int empId) {
+	 generateEmployee();
+	  Employee emp =null;
 	//using for loop, loop throw the employeeList if employee id is
 //		equal to empId, then return that employee
-		for (int i=0;i<=employeeList;i++) {
-			empId= 
+		for (int i=0;i<employeeList.size();i++) {
+			if(empId==employeeList.get(i).getEmpId()) {
+				emp = employeeList.get(i);
+			}
 		}
-		return emp1;
+		return emp;
 	}
 
 	/**
@@ -78,8 +82,4 @@ public class Repository {
 
 	}
 
-	public static void main(String args[]) {
-		Repository r = new Repository();
-		System.out.println(r);
-	}
 }
