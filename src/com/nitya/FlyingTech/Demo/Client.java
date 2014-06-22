@@ -77,7 +77,7 @@ public class Client {
 
 		System.out.println(Repository.getEmployee("vamshi"));
 		System.out.println(Repository.getEmployee(1001));
-		System.out.println(Repository.getEmployee(5000));
+//		System.out.println(Repository.getEmployee(5000));
     	Employee emp = Repository.getEmployee(1000);
 		
 		// call emp to string so that we can print formated object data.
