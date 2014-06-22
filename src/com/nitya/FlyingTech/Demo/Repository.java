@@ -8,9 +8,9 @@ import java.util.ArrayList;
  * 
  */
 public class Repository {
-	/**
-	 * Creating a arraylist of type Employee by name employeeList to store employee details.
-	 */
+/**
+* Creating a arraylist of type Employee by name employeeList to store employee details.
+*/
 	private static ArrayList<Employee> employeeList = new ArrayList<Employee>();
 
 	/**
@@ -22,7 +22,7 @@ public class Repository {
 	 generateEmployee();
 	  Employee emp =null;
 	//using for loop, loop throw the employeeList if employee id is
-//		equal to empId, then return that employee
+	//equal to empId, then return that employee
 		for (int i=0;i<employeeList.size();i++) {
 			if(empId==employeeList.get(i).getEmpId()) {
 				emp = employeeList.get(i);
@@ -32,44 +32,63 @@ public class Repository {
 	}
 
 	/**
-	 * 
-	 * @param firstName
-	 * @return
+	 * This getEmployee method is with a string parameter to check how overloading works
+	 * @param firstName to take firstname 
+	 * @return employee i.e employee details for particular firstname 
 	 */
 	public static Employee getEmployee(String firstName) {
 		//using for loop, loop throw the employee  if employee firstname euqal to firstName then return the employee
+		generateEmployee();
+		  Employee emp = null;
+			for (int i=0;i<employeeList.size();i++) {
+				if(firstName==employeeList.get(i).getFirstName()) {
+					emp = employeeList.get(i);
+				}
+			}
 
-		return firstName;
+		return emp;
 
 	}
 
 	/**
-	 * 
+	 * this getEmployee method has salary as its parameter
 	 * @param lastName
-	 * @return
+	 * @return employee 
 	 */
-	public static Employee getEmployee(String lastName) {
-		return lastName;
+	public static Employee getEmployee(float Salary) {
+		generateEmployee();
+		Employee emp = null;
+		for(int i = 0;i<employeeList.size();i++) 
+		{
+			if (Salary==employeeList.get(i).getSalary())	
+			{
+				emp = employeeList.get(i);
+			}
+		}
+		return emp ;
 
 	}
 
 	/**
-	 * 
-	 * @return
+	 * This method is generateEmployee() used to pick a employee with required details
+	 * @return employeeList
 	 */
 	private static ArrayList<Employee> generateEmployee() {
 		/**
-		 * generate your employee and return
+		 * generate employee and return
 		 */
-		Employee emp1 = new Employee("vamshi", 1000, 10000);
-		Employee emp2 = new Employee("nikhil", 1001, 10002);
-		Employee emp3 = new Employee("sai", 1002, 5000);
-		Employee emp4 = new Employee("shiva", 1003, 5000);
-		Employee emp5 = new Employee("sai kumar", 1004, 5000);
-		Employee emp6 = new Employee("nithin", 1005, 5000);
-		Employee emp7 = new Employee("kalyan", 1006, 5000);
-		Employee emp8 = new Employee("tapan", 1007, 5000);
-
+		Employee emp1 = new Employee(1000,"vamshi","Veggalam",6000);
+		Employee emp2 = new Employee(1001,"nikhil","bathula",5222);
+		Employee emp3 = new Employee(1002,"saikrishna","kakulamarri", 5000);
+		Employee emp4 = new Employee(1003,"vivek","boddula", 5000);
+		Employee emp5 = new Employee(1004,"sravani","anumula",9000);
+		Employee emp6 = new Employee(1005,"nithin","mylarapu",5000);
+		Employee emp7 = new Employee(1006,"pradeep","vootla", 5000);
+		Employee emp8 = new Employee(1007,"tapan","*", 5000);
+		Employee emp9 = new Employee(1008,"sahitya", "vemula",1002);
+/**
+ * added objects to the arraylist employeeList
+ */
 		employeeList.add(emp1);
 		employeeList.add(emp2);
 		employeeList.add(emp3);
@@ -78,6 +97,7 @@ public class Repository {
 		employeeList.add(emp6);
 		employeeList.add(emp7);
 		employeeList.add(emp8);
+		employeeList.add(emp9);
 		return employeeList;
 
 	}
