@@ -78,6 +78,17 @@ public class Client {
 		System.out.println(Repository.getEmployee("vamshi"));
 		System.out.println(Repository.getEmployee(1001));
 		System.out.println(Repository.getEmployee(5000));
+    	Employee emp = Repository.getEmployee(1000);
+		
+		// call emp to string so that we can print formated object data.
+		System.out.println(emp.toString());
+	
+       
+		System.out.println(Repository.getEmployee(1001).toString());
+		
+		
+	}
+
 
 		/**
 		 * YARI HERE AM TRIED TO GIVE INPUT BUT AM GETTING ERROR JUS CHECK
@@ -99,4 +110,3 @@ public class Client {
 		 */
 
 	}
-}
